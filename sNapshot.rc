@@ -1,0 +1,239 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_sNapshot MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Snapshot",               ID_FILE_NEWSN
+        MENUITEM "&Options...",                 ID_FILE_OPTIONS
+        MENUITEM "&Find...",                    ID_FILE_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+IDR_RCLK MENU DISCARDABLE 
+BEGIN
+    POPUP "Rclk"
+    BEGIN
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Large Icons",                ID_VIEW_LARGEICONS
+            MENUITEM "&Small Icons",                ID_VIEW_SMALLICONS
+            MENUITEM "List",                        ID_VIEW_LISTVIEW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Open...",                    ID_RCLK_OPEN
+        MENUITEM "&Explore...",                 ID_RCLK_EXPLORE
+    END
+    POPUP "View"
+    BEGIN
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Large Icons",                ID_VIEW_LARGEICONS
+            MENUITEM "&Small Icons",                ID_VIEW_SMALLICONS
+            MENUITEM "List",                        ID_VIEW_LISTVIEW
+        END
+    END
+    POPUP "CD"
+    BEGIN
+        MENUITEM "&Open",                       ID_CD_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 ID_CD_PROPERTIES
+        MENUITEM "&Remove",                     ID_CD_REMOVE
+    END
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Open",                       ID_FILE_OPENFILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 ID_FILE_FILEPROP
+    END
+    POPUP "Search"
+    BEGIN
+        MENUITEM "&Open",                       ID_SEARCH_OPEN
+        MENUITEM "Open Containing &Folder",     ID_SEARCH_OPENFLDR
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CD                  ICON    DISCARDABLE     "res\\CDROM01.ICO"
+IDI_FOLDER              ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 199, 161
+STYLE DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,59,139,80,14
+    CTEXT           "CD Snapshot V 1.2",IDC_STATIC,7,7,185,10
+    ICON            IDI_CD,IDC_STATIC,11,23,21,20
+    ICON            IDI_CD,IDC_STATIC,37,23,21,20
+    CTEXT           "By",IDC_STATIC,7,49,185,10
+    CTEXT           "Hamid Reza Mohammadi",IDC_STATIC,7,58,185,10
+    CTEXT           "(http://www.mohammadi.netfirms.com)",IDC_STATIC,7,68,
+                    185,10
+    CTEXT           "[Started : 12-23-2002]",IDC_STATIC,7,80,185,10
+    ICON            IDI_CD,IDC_STATIC,89,22,21,20
+    ICON            IDI_CD,IDC_STATIC,115,22,21,20
+    ICON            IDI_CD,IDC_STATIC,63,23,21,20
+    ICON            IDI_CD,IDC_STATIC,141,23,21,20
+    ICON            IDI_CD,IDC_STATIC,167,23,21,20
+    CTEXT           "[Completed <V 1.0> : 12-31-2002]",IDC_STATIC,7,91,185,
+                    10
+    CTEXT           "[A Little Fix : 09-29-2005]",IDC_STATIC,7,102,185,10
+    CTEXT           "[Another Fix : 02-03-2009]",IDC_STATIC,6,114,185,10
+    CTEXT           "http://code.google.com/p/cdsnapshot",IDC_STATIC,6,126,
+                    185,10
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 234, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Snapshots Path : ",IDC_STATIC,7,8,57,10
+    EDITTEXT        IDC_SNAPSHOTS,64,7,163,12,ES_AUTOHSCROLL
+    LTEXT           "Temp Directory :",IDC_STATIC,7,28,57,10
+    EDITTEXT        IDC_TEMP,64,26,163,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,55,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,45,50,14
+END
+
+IDD_FIND DIALOG DISCARDABLE  0, 0, 279, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "File Name:",IDC_STATIC,7,9,37,9
+    EDITTEXT        IDC_NAME,48,7,146,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Find",IDC_FIND,201,7,71,12
+    CONTROL         "List3",IDC_RESULTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,48,25,224,72
+    LTEXT           "*, ? and ... not allowed",IDC_FOUND,48,103,224,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "res\\toolbar.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
