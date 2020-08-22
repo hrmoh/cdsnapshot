@@ -9,4 +9,4 @@ The application is developed originally in 2002 as an attempt to master Windows 
 
 [Original Source Code at code.google.com](https://code.google.com/archive/p/cdsnapshot/)
 
-[Download binary from softpedeia](https://www.softpedia.com/get/CD-DVD-Tools/CD-DVD-Images-Utils/CD-Snapshot.shtml)
+[Download binary from softpedia](https://www.softpedia.com/get/CD-DVD-Tools/CD-DVD-Images-Utils/CD-Snapshot.shtml)
